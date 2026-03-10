@@ -1,0 +1,42 @@
+:root {
+  /* Colors */
+  --calming-dark-blue: #091c60;
+  --healthy-green: #009e81;
+  --cosy-blue: #56a9b2;
+  --moving-mauve: #775dc5;
+  --off-white: #fefcf9;
+  --paragraph: #2d3246;
+  --grey: #808186;
+  --white-smoke: #f4f3f3;
+  --harmonious-yellow: #dda71c;
+  --primary-cta: #fcbc31;
+  /* Added based on wireframe CTA color */
+  --peachy-pink: #e07979;
+  --fl-med: #0c3fc4;
+
+  /* Typography */
+  --font-primary: 'Maisonneueweb', sans-serif;
+  --font-secondary: 'Maisonneueweb book', sans-serif;
+
+  --h1-size: 56px;
+  --h1-lh: 68px;
+  --h2-size: 44px;
+  --h2-lh: 52px;
+  --h3-size: 36px;
+  --h3-lh: 46px;
+  --body-size: 18px;
+  --body-lh: 1.46;
+
+  /* Spacing & Layout */
+  --max-width: 1440px;
+  --container-padding: 60px;
+  --section-spacing: 80px;
+
+  /* Corner Radii */
+  --radius-pill: 50px;
+  --radius-card: 16px;
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 19px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
