@@ -1029,5 +1029,107 @@ section { padding: var(--section-spacing) 0; }
 
 
 /* ============================================
+   COOKIE CONSENT BANNER
+   ============================================ */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid var(--white-smoke);
+    box-shadow: 0 -4px 24px rgba(9, 28, 96, 0.1);
+    z-index: 2000;
+    padding: 20px 0;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.cookie-banner.visible {
+    transform: translateY(0);
+}
+
+.cookie-banner-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.cookie-text {
+    flex: 1;
+}
+
+.cookie-text strong {
+    display: block;
+    color: var(--calming-dark-blue);
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+.cookie-text p {
+    font-size: 0.85rem;
+    color: var(--grey);
+    line-height: 1.5;
+}
+
+.cookie-text a {
+    color: var(--cosy-blue);
+    text-decoration: underline;
+}
+
+.cookie-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.cookie-btn-accept {
+    background-color: var(--calming-dark-blue);
+    color: white;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+}
+
+.cookie-btn-accept:hover {
+    background-color: var(--fl-med);
+    transform: translateY(-1px);
+}
+
+.cookie-btn-decline {
+    background-color: transparent;
+    color: var(--grey);
+    border: 1px solid var(--white-smoke);
+    padding: 10px 24px;
+    font-size: 0.9rem;
+}
+
+.cookie-btn-decline:hover {
+    border-color: var(--grey);
+    color: var(--paragraph);
+}
+
+@media (max-width: 768px) {
+    .cookie-banner-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .cookie-actions {
+        width: 100%;
+    }
+
+    .cookie-btn-accept,
+    .cookie-btn-decline {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/* ============================================
    SCROLL REVEAL SCRIPT (inline)
    ============================================ */
