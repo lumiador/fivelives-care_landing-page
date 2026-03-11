@@ -14,8 +14,13 @@ body {
     font-family: 'Outfit', var(--font-primary), sans-serif;
     line-height: var(--body-lh);
     font-size: var(--body-size);
-    overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+/* Overflow clip lives on the wrapper, NOT body, so position:fixed children
+   (cookie banner) remain anchored to the viewport. */
+.page-wrapper {
+    overflow-x: hidden;
 }
 
 /* ===== Animations ===== */
