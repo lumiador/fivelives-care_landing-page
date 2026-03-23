@@ -304,6 +304,35 @@ section { padding: var(--section-spacing) 0; }
     letter-spacing: 0.3px;
 }
 
+.hero-suitable {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--calming-dark-blue);
+    background: rgba(9, 28, 96, 0.06);
+    border-left: 3px solid var(--healthy-green);
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    line-height: 1.55;
+    max-width: 560px;
+}
+
+/* ===== Disclaimer section ===== */
+.disclaimer-section {
+    background: var(--off-white);
+    border-top: 1px solid rgba(9, 28, 96, 0.08);
+    padding: 24px 0;
+}
+
+.disclaimer-text {
+    font-size: 0.78rem;
+    color: var(--grey);
+    line-height: 1.6;
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 /* ============================================
    TRUST BAR
